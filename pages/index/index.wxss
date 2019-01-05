@@ -1,0 +1,45 @@
+.page-index .change{
+  padding-left:50rpx;
+  margin-top:10rpx;
+  color:rgb(175, 154, 154);
+}
+
+.page-index .change .navigator-hover{
+  color:blue;
+}
+
+.page-index .change .icon-xiala,.page-index .change text{
+  font-size:30rpx;
+}
+
+.page-index .input-area{
+  position:relative;
+  margin-top: 30rpx;
+}
+
+.page-index .input-area .icon-iconclose{
+  position: absolute;
+  right: 15rpx;
+  font-size: 50rpx;
+  color:#aaa;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.page-index .input-area .text-wrap{
+  border-bottom:1px solid #888;
+}
+.page-index .input-area .text-wrap textarea{
+  width:calc(100% - 20rpx);
+  padding: 20rpx 0 20rpx 20rpx;
+}
+
+.page-index .text-area{
+  margin-top: 30rpx;
+}
+
+.page-index .text-area view:first-child{
+  font-size: 30rpx;
+  padding-left: 50rpx;
+  color:rgb(175, 154, 154);
+}
