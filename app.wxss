@@ -1,9 +1,19 @@
 /**app.wxss**/
+
+@import "pages/iconfont/icon/icon.wxss";
+
 .container {
-  height: 100%;
+  padding: 0;
+  background-color:#f5fafe;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  flex-direction:column;
   box-sizing: border-box;
+  font-size: 30rpx;
+  color: #333;
 } 
-@import "pages/iconfont/icon/icon"
+
+.view-hover {
+  background-color: #f3f3f3!important;
+}
+

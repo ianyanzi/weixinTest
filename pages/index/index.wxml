@@ -1,24 +1,25 @@
 <!--index.wxml-->
-<view class="container page-index">
-
+<view class="container">
   <view class="change">
-    <navigator url="../change/change" hover-class="navigator-hover">
-      <text>语言{{curlang.chs}}</text>
-      <text class="iconfont icon-xiala"></text>
+    <navigator url="/pages/change/change" hover-class="navigator-hover">
+      <block>
+        <text>到{{curLang.chs}}</text>
+        <text class="iconfont icon-xiala"></text>
+      </block> 
     </navigator>
-  </view>
 
+  </view>
   <view class="input-area">
-    <text class="iconfont icon-iconclose" hidden="{{hideClearIcon}}" bindtap="onTapClose"></text>
-    <view class="text-wrap">
-      <textarea placeholder="输入翻译的文本" bindconfirm="onConfirm" bindinput="onInput" bindblur="onConfirm" value="{{query}}"></textarea>
+    <text class="iconfont icon-iconclose" hidden="{{hideClearIcon}}" bindtap='onTapClose'></text>
+    <view class="textarea-wrap">
+      <textarea placeholder='请输入要翻译的文本' placeholder-style='color: #8995a1'  bindinput='onInput' bindconfirm='onConfirm' bindblur='onConfirm'  value="{{query}}"></textarea>
     </view>
-  </view>
-
-  <view class="text-area">
-    <view>译文</view>
-    <view class="text-result" wx:for="{{result}}" wx:key="{{index}}">
-      <text selectable="true">{{item.dst}}</text>
+    
+    <view class="text-area">
+      <view class="text-title">译文</view>
+      <view class="text-result" wx:for="{{result}}" wx:key="index">
+        <text selectable="true">{{item.dst}}</text>
+      </view>
     </view>
   </view>
 </view>

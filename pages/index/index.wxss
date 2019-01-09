@@ -1,45 +1,56 @@
-.page-index .change{
-  padding-left:50rpx;
-  margin-top:10rpx;
-  color:rgb(175, 154, 154);
+/**index.wxss**/
+
+.change {
+  color: #8995a1;
+  font-size: 24rpx;
+  padding: 20rpx 40rpx;
+  display: flex;
+  align-items: center;
+}
+.change .icon-right {
+  color: #888;
+}
+.change .icon-xiala {
+  color: #8995a1;
+  font-size: 20rpx;
 }
 
-.page-index .change .navigator-hover{
-  color:blue;
+.input-area {
+  position: relative;
 }
-
-.page-index .change .icon-xiala,.page-index .change text{
-  font-size:30rpx;
+.textarea-wrap {
+  background: #fff;
+  border-bottom: 1px solid #c7cee0;
 }
-
-.page-index .input-area{
-  position:relative;
-  margin-top: 30rpx;
+.input-area textarea {
+  background-color: #fff;
+  padding: 30rpx 0 30rpx 30rpx;
+  width: calc(100% - 48rpx);
+  margin: 0;
+  box-sizing: border-box;
 }
-
-.page-index .input-area .icon-iconclose{
+.input-area .icon-iconclose {
   position: absolute;
-  right: 15rpx;
-  font-size: 50rpx;
-  color:#aaa;
-  cursor: pointer;
+  right: 12rpx;
+  top: 20rpx;
   z-index: 100;
+  font-size: 40rpx;
+  color: #888;
 }
 
-.page-index .input-area .text-wrap{
-  border-bottom:1px solid #888;
-}
-.page-index .input-area .text-wrap textarea{
-  width:calc(100% - 20rpx);
-  padding: 20rpx 0 20rpx 20rpx;
+.input-area .text-area {
+  min-height: 80rpx;
+  padding: 40rpx;
+  background-color: #fff;
 }
 
-.page-index .text-area{
-  margin-top: 30rpx;
+.input-area .text-title {
+  font-size: 28rpx;
+  color: #8995a1;
 }
 
-.page-index .text-area view:first-child{
-  font-size: 30rpx;
-  padding-left: 50rpx;
-  color:rgb(175, 154, 154);
+.input-area .text-result {
+  padding: 20rpx 0;
 }
+
+
